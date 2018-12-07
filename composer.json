@@ -1,0 +1,44 @@
+{
+    "name": "chudeusz/laracms-formbuilder",
+    "description": "LaraCMS Form Builder",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kamil Karpiński",
+            "email": "chudeusz@soswinformatyka.pl"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0",
+        "laravelcollective/html": "5.*",
+        "illuminate/database": "5.*@dev",
+        "illuminate/validation": "5.*@dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.0",
+        "orchestra/testbench": "~3.4"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.0"
+        },
+        "laravel": {
+            "providers": [
+                "Chudeusz\\LaraCMSFormBuilder\\FormBuilderServiceProvider"
+            ],
+            "aliases": {
+                "FormBuilder": "Chudeusz\\LaraCMSFormBuilder\\Facades\\FormBuilder"
+            }
+        }
+    },
+    "autoload": {
+        "psr-0": {
+            "Chudeusz\\LaraCMSFormBuilder": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

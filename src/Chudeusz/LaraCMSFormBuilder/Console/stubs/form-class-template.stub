@@ -1,0 +1,13 @@
+<?php
+
+namespace {{namespace}};
+
+use Chudeusz\LaraCMSFormBuilder\Form;
+
+class {{class}} extends Form
+{
+    public function buildForm()
+    {
+        {{fields}}
+    }
+}
